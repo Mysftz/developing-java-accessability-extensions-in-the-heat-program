@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Checking Properties</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="1" cellpadding="1" STYLE="font-family: Arial; font-size: 9.5px; color: #000000;">
+  <tr>
+    <td width="98%" bgcolor="#E8E8E8"><strong>Checking Properties</strong></td>
+    <td width="2%"></td>
+  </tr>
+  <tr>
+    <td>
+        HEAT provides a very flexible mechanism for checking all properties of the 
+        program in the editor. You just have to select Check Properties in the menu
+        or toolbar.
+        <br><br>
+        Properties are functions or constants with the prefix <code>prop_</code> 
+        whose definitions start in column 1.
+        <br><br>
+        For checking a property HEAT applies a checking function to the property and
+        evaluates the expression. If the evaluation result contains a certain string,
+        then checking was successful, otherwise not.
+        <br>
+        <ul>
+            <li>
+                Boolean unit tests:<br>
+                Properties are constants of type <code>Bool</code>, e.g.
+                <pre>
+  prop_sort = sort [3,2,1,2] == [1,2,2,3]</pre>
+                <br>
+                Here the test function is empty and the desired positive result
+                is <code>True</code>.
+            </li>
+            <li>
+                QuickCheck test properties:<br>
+                Properties are of type <code>Testable prop => prop</code>, e.g
+                <pre>
+  prop_sort :: [Int] -> Bool
+  prop_sort xs = sort (sort xs) == sort xs</pre>
+                <br>
+                Here the test function is <code>quickCheck</code> and the desired 
+                positive result is <code>OK</code>.
+            </li>
+        </ul>
+        Under the menu item Options you can set both test function and desired
+        positive result for property checking.
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+
+</body>
+</html>

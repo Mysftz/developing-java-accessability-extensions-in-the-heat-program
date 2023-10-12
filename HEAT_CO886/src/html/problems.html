@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Limitations, Problems, Bugs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="1" cellpadding="1" STYLE="font-family: Arial; font-size: 9.5px; color: #000000;">
+  <tr>
+    <td width="98%" bgcolor="#E8E8E8"><strong>Limitations, Problems, Bugs</strong></td>
+    <td width="2%"></td>
+  </tr>
+  <tr>
+    <td>
+        All top-level functions and constants (except properties) are expected to
+        have their type declared as well. Otherwise they will not appear in the
+        overview subwindow.
+        <br><br>
+        HEAT does not work with literate Haskell programs (<code>.lhs</code>).
+        The definitions of all entities collected in the overview subwindow must start
+        in the first column; e.g. locally defined class methods are not found.
+        <br><br>
+        All HEAT settings that you can change under the menu item Options are
+        saved in a file <code>heat.settings</code> that is located in your home
+        directory. You can always delete that file to reset HEAT to its original
+        settings (So it will ask you for the path of the Haskell interpreter again.).
+        <br><br>
+        HEAT also records some of its activities in a file <code>heat.log</code>. If HEAT
+        crashes or shows faulty behaviour, the content of this readable file may give some
+        indication of the cause.
+        <br><br>
+        HEAT, including its source code is available freely from
+        <code>http://www.cs.kent.ac.uk/projects/heat/</code>.
+        You are welcome to contribute to improvements.
+        <br><br>
+        Please report bugs in HEAT with clear descriptions to <code>oc@kent.ac.uk</code>.
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+
+</body>
+</html>

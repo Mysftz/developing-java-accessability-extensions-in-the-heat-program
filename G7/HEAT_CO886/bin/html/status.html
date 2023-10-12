@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Untitled Document</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	</head>
+	<body>
+		<table width="100%" border="0" cellspacing="1" cellpadding="1" STYLE="FONT-SIZE: 9px; COLOR: #000000; FONT-FAMILY: Arial">
+			<tr>
+				<td width="98%" bgcolor="#e8e8e8"><strong>Status Indicator</strong></td>
+				<td width="2%"></td>
+			</tr>
+			<tr>
+				<td>
+                                In the top right corner of the main window the status of HEAT is indicated.
+                                The status determines whether you can use the interpreter subwindow.
+                                HEAT ensures that the content of the editor subwindow and the definitions
+                                you can use in the interpreter agree.
+                                The status is one of the following three:
+                                <ul>
+                                    <li><img src="statusOK.jpg" width="70" height="27"><br> OK: 
+                                        You can evaluate expressions in the interpreter console.<br>
+                                        Either there is no program in the editor and you can just use pre-defined functions in the interpreter,
+                                        or the program in the editor was successfully compiled and you can use its definitions.
+                                    </li>
+                                    <li><img src="statusUNKNOWN.jpg" width="70" height="27"><br> Change:
+                                        You changed the program in the editor (possibly by opening a new one).<br>
+                                        You cannot use the interpreter. You have to compile before you can use the
+                                        interpreter.
+                                    </li>
+                                    <li><img src="statusFAIL.jpg" width="70" height="27"><br> Error:
+                                        You compiled the program in the editor unsuccessfully.<br>
+                                        The error message is shown in the console and the error location is
+                                        highlighted in the editor.<br>
+                                        You cannot use the interpreter. Instead you should modify the program in the editor.
+                                    </li>
+             
+                                </ul>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>
